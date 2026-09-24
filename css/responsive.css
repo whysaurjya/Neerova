@@ -1,0 +1,544 @@
+/* ==========================================================================
+   NEEROVA PLUMBING - RESPONSIVE STYLESHEET
+   Desktop, Tablet, and Mobile Breakpoint Adaptations
+   ========================================================================== */
+
+/* --- Large Desktop & Laptops (1200px - 1440px) --- */
+@media (max-width: 1200px) {
+  .hero-main-title {
+    font-size: 3rem;
+  }
+  
+  .hero-dominant-plumber {
+    height: 480px;
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  
+  .portfolio-card {
+    height: 350px;
+  }
+  
+  .features-craft-grid {
+    gap: 20px;
+  }
+  
+  .footer-top-grid {
+    grid-template-columns: 1.2fr 0.8fr 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+/* --- Medium Screens & Tablets Landscape (992px - 1199px) --- */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 2.3rem;
+  }
+  
+  /* Hero */
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    min-height: auto;
+  }
+  
+  .hero-geometric-divider {
+    left: calc(47% + 30px);
+    width: 44px;
+    transform: skewX(18deg);
+    z-index: 3;
+  }
+
+  .hero-bg-left {
+    left: -100vw;
+    width: calc(100vw + 47% + 30px + 22px);
+    transform: skewX(18deg);
+    transform-origin: top left;
+    z-index: 2;
+  }
+
+  .hero-bg-right {
+    width: 60%;
+    z-index: 1;
+  }
+
+  .hero-main-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+  
+  .hero-dominant-plumber {
+    height: 440px;
+  }
+  
+  .hero-floating-badge {
+    transform: scale(0.8);
+  }
+
+  .hero-floating-badge.badge-top-left {
+    top: calc(15% - 40px);
+    left: -20px;
+  }
+
+  .hero-floating-badge.badge-bottom-right {
+    bottom: 22%;
+    right: -15px;
+  }
+
+  .hero-floating-badge.badge-hand {
+    bottom: 10%;
+    left: -20px;
+  }
+
+  .quote-form-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Portfolio Showcase (3:4 Ratio) */
+  .gallery-card {
+    width: 285px;
+    height: 380px;
+    aspect-ratio: 3 / 4;
+  }
+  
+  .gallery-showcase-wrapper::before,
+  .gallery-showcase-wrapper::after {
+    width: 60px;
+  }
+  
+  /* About */
+  .about-editorial-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  
+  .about-arch-showcase {
+    min-height: 400px;
+  }
+  
+  /* Customer Reviews Carousel */
+  .review-google-card {
+    flex: 0 0 340px;
+    width: 340px;
+    padding: 26px 22px 20px;
+  }
+
+  .reviews-carousel-wrapper::before,
+  .reviews-carousel-wrapper::after {
+    width: 80px;
+  }
+  
+  /* Features */
+  .features-craft-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .feature-center-pillar {
+    grid-column: span 2;
+    order: -1;
+    min-height: 380px;
+  }
+  
+  /* FAQ */
+  .faq-layout-grid, .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .faq-dispatch-desk {
+    position: relative;
+    top: 0;
+  }
+  
+  /* Service Areas */
+  .service-areas-section {
+    padding: 70px 0 160px 0;
+  }
+
+  .areas-grid, .areas-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .areas-map-card {
+    max-width: 100%;
+    height: 400px;
+  }
+  
+  /* Footer */
+  .footer-newsletter-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 20px;
+  }
+
+  .footer-newsletter-action {
+    max-width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px 0;
+  }
+
+  .footer-col {
+    padding: 0 20px;
+  }
+
+  .footer-col-divider {
+    border-left: none;
+  }
+}
+
+/* --- Tablets Portrait & Large Handhelds (768px - 991px) --- */
+@media (max-width: 768px) {
+  /* Navbar (PRESERVED) */
+  .navbar-pill {
+    padding: 6px 14px;
+    max-width: 95%;
+  }
+  
+  .nav-links, .phone-pill {
+    display: none;
+  }
+  
+  .mobile-toggle {
+    display: block;
+  }
+  
+  /* Hero (STRICTLY PRESERVED) */
+  .hero-section {
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+  
+  .hero-geometric-divider {
+    display: none;
+  }
+
+  .hero-bg-left {
+    display: none;
+  }
+
+  .hero-bg-right {
+    width: 100%;
+    opacity: 0.2;
+    z-index: 1;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: left;
+    gap: 30px;
+  }
+  
+  .hero-left-col {
+    align-items: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+    transform: translateX(0);
+  }
+  
+  .hero-main-title {
+    font-size: 2.3rem;
+  }
+  
+  .hero-desc-para {
+    max-width: 100%;
+  }
+  
+  .hero-verified-trust-card {
+    max-width: 100%;
+  }
+  
+  .hero-right-col {
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .hero-dominant-plumber {
+    height: 380px;
+  }
+
+  .hero-plumber-wrapper {
+    transform: translateX(0);
+  }
+
+  .hero-floating-badge {
+    display: none;
+  }
+  
+  .hero-quote-dock {
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .quote-tab-header {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+    padding: 12px 16px;
+  }
+
+  .quote-tab-title {
+    font-size: 1.1rem;
+    justify-content: center;
+  }
+
+  .quote-box-body {
+    padding: 18px 16px 36px 16px;
+    border-radius: 0;
+  }
+
+  .quote-form-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .quote-form-bottom-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  /* About */
+  .about-content-grid, .about-editorial-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-right {
+    margin-top: 10px;
+  }
+
+  .about-arch-wrapper {
+    height: 480px;
+  }
+
+  .about-plumber-img {
+    max-height: 450px;
+  }
+
+  .about-stats-strip {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  
+  /* Ticker */
+  .ticker-item {
+    font-size: 1.1rem;
+    gap: 12px;
+  }
+  
+  /* Features */
+  .features-craft-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .feature-center-pillar {
+    grid-column: span 1;
+    min-height: 300px;
+  }
+  
+  /* Pre-Footer CTA */
+  .cta-banner-architectural, .cta-banner-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 44px 28px;
+    gap: 28px;
+  }
+  
+  .cta-banner-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .cta-banner-actions a {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Service Areas */
+  .service-areas-section {
+    padding: 60px 0 130px 0;
+  }
+
+  /* Footer */
+  .footer-newsletter-banner {
+    padding: 20px 18px;
+    margin-bottom: 36px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-col {
+    padding: 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
+/* --- Small Mobile Phones (360px - 480px) --- */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-main-title {
+    font-size: 2rem;
+  }
+
+  .hero-badge-row {
+    gap: 6px;
+  }
+
+  .hero-pill-badge {
+    font-size: 0.78rem;
+    padding: 5px 10px;
+  }
+
+  .hero-verified-trust-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+  
+  /* Portfolio Showcase (3:4 Ratio) */
+  .gallery-card {
+    width: 240px;
+    height: 320px;
+    aspect-ratio: 3 / 4;
+    border-radius: 16px;
+  }
+  
+  .gallery-card-title {
+    font-size: 1rem;
+  }
+
+  .gallery-card-overlay {
+    padding: 16px;
+  }
+
+  .gallery-showcase-wrapper::before,
+  .gallery-showcase-wrapper::after {
+    width: 30px;
+  }
+  
+  /* Two-Row Customer Reviews Sliders Mobile */
+  .reviews-dual-showcase-container {
+    gap: 16px;
+    mask-image: linear-gradient(to right, transparent 0%, black 40px, black calc(100% - 40px), transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 40px, black calc(100% - 40px), transparent 100%);
+  }
+
+  .reviews-dual-showcase-container::before,
+  .reviews-dual-showcase-container::after {
+    width: 45px;
+  }
+
+  .reviews-row-track {
+    gap: 16px;
+  }
+
+  .review-google-card {
+    flex: 0 0 280px;
+    width: 280px;
+    padding: 20px 18px 16px;
+    min-height: 270px;
+    border-radius: 16px;
+  }
+
+  .review-card-text {
+    font-size: 0.86rem;
+    line-height: 1.5;
+    margin: 12px 0 14px;
+  }
+
+  .review-avatar-img {
+    width: 42px;
+    height: 42px;
+  }
+  
+  .quote-form-body {
+    padding: 18px 16px;
+  }
+  
+  .quote-header-tab {
+    font-size: 1.15rem;
+    padding: 12px;
+  }
+  
+  .floating-actions-wrap {
+    bottom: 18px;
+    right: 18px;
+  }
+  
+  .btn-back-top {
+    width: 42px;
+    height: 42px;
+    font-size: 0.9rem;
+  }
+
+  .about-stats-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .areas-map-frame {
+    height: 320px;
+    padding: 12px;
+  }
+
+  .modal-card {
+    padding: 32px 20px;
+  }
+
+  .tech-modal-card {
+    padding: 28px 18px;
+    max-height: 94vh;
+  }
+
+  .modal-close-x {
+    top: 12px;
+    right: 14px;
+    font-size: 1.7rem;
+  }
+
+  /* Service Areas Mobile */
+  .service-areas-section {
+    padding: 48px 0 100px 0;
+  }
+
+  /* Footer Mobile Form */
+  .footer-newsletter-form {
+    flex-direction: column;
+    gap: 8px;
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .footer-newsletter-input {
+    background: #17181D;
+    border: 1px solid #282A33;
+    border-radius: 8px;
+    padding: 12px 14px;
+  }
+
+  .footer-newsletter-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+  }
+}
+
